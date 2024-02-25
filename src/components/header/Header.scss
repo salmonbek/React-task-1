@@ -1,0 +1,118 @@
+.header {
+  padding: 25px 0px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 3px 3px rgb(94, 87, 87);
+  .container {
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo-flex {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &-item {
+          font-family: Poppins;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #173a56;
+        }
+      }
+      &-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &-item {
+          &__link {
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #22343d;
+            &:hover {
+              font-weight: 600;
+              transition: 0.4s;
+            }
+          }
+        }
+        .nav-btn-1 {
+          padding: 10px 23px;
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+          border: 1.4px solid rgb(172, 170, 170);
+          border-radius: 5px;
+          &:hover {
+            background: #02897a;
+            transition: 0.4s;
+            color: #fff;
+            border: none;
+          }
+        }
+        .nav-btn-2 {
+          padding: 10px 23px;
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+          border: 1.4px solid rgb(172, 170, 170);
+          border-radius: 5px;
+          color: white;
+          background: #02897a;
+          &:hover {
+            transition: 0.4s;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border: 1.4px solid rgb(172, 170, 170);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 888px) {
+  .header {
+    .container {
+      .nav {
+        .nav-list {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .header {
+    .container {
+      .nav {
+        .nav-list {
+          .nav-btn-1 {
+            display: none;
+          }
+          .nav-btn-2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
