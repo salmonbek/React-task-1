@@ -1,5 +1,17 @@
 import "./Main.scss";
-
+const heroRight = "../src/assets/images/hero-right-img.png";
+const play = "../src/assets/images/play-hero.png";
+const cursor = "../src/assets/images/cursor-icon.png";
+const design = "../src/assets/images/design-icon.png";
+const heart = "../src/assets/images/heart-icon.png";
+const test = "../src/assets/images/test-icon.png";
+const contentCard1 = "../src/assets/images/content-card1.png";
+const contentCard2 = "../src/assets/images/content-card-2.png";
+const contentCard3 = "../src/assets/images/content-card3.png";
+const star = "../src/assets/images/star-img.png";
+const manImg1 = "../src/assets/images/vahid-1.png";
+const manImg2 = "../src/assets/images/vahid-2.png";
+const manImg3 = "../src/assets/images/vahid-3.png";
 function Main() {
   return (
     <main className="main">
@@ -21,7 +33,7 @@ function Main() {
                   Get started
                 </a>
                 <div className="site-hero-left__links__flex">
-                  <img src="../src/assets/images/play-hero.png" alt="play" />
+                  <img src={play} alt="play" />
                   <a className="site-hero-left__links__flex__link" href="#">
                     Watch the Video
                   </a>
@@ -30,7 +42,7 @@ function Main() {
             </div>
             <div className="site-hero-right">
               <img
-                src="../src/assets/images/hero-right-img.png"
+                src={heroRight}
                 alt="her-right-img"
                 className="heroright-img"
               />
@@ -50,11 +62,7 @@ function Main() {
         <div className="container">
           <div className="product-card">
             <div className="product-card__items">
-              <img
-                className="img-1"
-                src="../src/assets/images/cursor-icon.png"
-                alt="icon-cursor"
-              />
+              <img className="img-1" src={cursor} alt="icon-cursor" />
               <h4 className="product-card__items__description1">
                 First click tests
               </h4>
@@ -63,11 +71,7 @@ function Main() {
               </p>
             </div>
             <div className="product-card__items">
-              <img
-                className="img-2"
-                src="../src/assets/images/design-icon.png"
-                alt="icon-design"
-              />
+              <img className="img-2" src={design} alt="icon-design" />
               <h4 className="product-card__items__description1">
                 Design surveys
               </h4>
@@ -76,11 +80,7 @@ function Main() {
               </p>
             </div>
             <div className="product-card__items">
-              <img
-                className="img-3"
-                src="../src/assets/images/heart-icon.png"
-                alt="heart-icon"
-              />
+              <img className="img-3" src={heart} alt="heart-icon" />
               <h4 className="product-card__items__description1">
                 Preference tests
               </h4>
@@ -89,11 +89,7 @@ function Main() {
               </p>
             </div>
             <div className="product-card__items">
-              <img
-                className="img-4"
-                src="../src/assets/images/test-icon.png"
-                alt="icon-test"
-              />
+              <img className="img-4" src={test} alt="icon-test" />
               <h4 className="product-card__items__description1">
                 Five second tests
               </h4>
@@ -122,10 +118,7 @@ function Main() {
           </div>
           <div className="card-content-grid">
             <div className="card-content-grid__items">
-              <img
-                src="../src/assets/images/content-card1.png"
-                alt="card-img1"
-              />
+              <img src={contentCard1} alt="card-img1" />
               <div className="padd">
                 <p className="card-content-grid__items__p1">
                   By <b> Wahid Ari</b> | 03 March 2019
@@ -136,10 +129,7 @@ function Main() {
               </div>
             </div>
             <div className="card-content-grid__items">
-              <img
-                src="../src/assets/images/content-card-2.png"
-                alt="card-img2"
-              />
+              <img src={contentCard2} alt="card-img2" />
               <div className="padd">
                 <p className="card-content-grid__items__p1">
                   By <b>Wahid Ari</b> | 03 March 2019
@@ -150,10 +140,7 @@ function Main() {
               </div>
             </div>
             <div className="card-content-grid__items">
-              <img
-                src="../src/assets/images/content-card3.png"
-                alt="card-img3"
-              />
+              <img src={contentCard3} alt="card-img3" />
               <div className="padd">
                 <p className="card-content-grid__items__p1">
                   By <b>Wahid Ari</b> | 03 March 2019
@@ -244,14 +231,14 @@ function Main() {
           </div>
           <div className="client-card">
             <div className="client-card-items">
-              <img src="../src/assets/images/star-img.png" alt="" />
+              <img src={star} alt="star" />
               <p className="client-card-items__p">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
               <div className="client-card-items-flex">
                 <div>
-                  <img src="../src/assets/images/vahid-1.png" alt="img-man" />
+                  <img src={manImg1} alt="img-man" />
                 </div>
                 <div>
                   <p className="client-card-items-flex__p1">Wahid Ari</p>
@@ -260,14 +247,14 @@ function Main() {
               </div>
             </div>
             <div className="client-card-items">
-              <img src="../src/assets/images/star-img.png" alt="star-icon" />
+              <img src={star} alt="star-icon" />
               <p className="client-card-items__p">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
               <div className="client-card-items-flex">
                 <div>
-                  <img src="../src/assets/images/vahid-2.png" alt="img-man" />
+                  <img src={manImg2} alt="img-man" />
                 </div>
                 <div>
                   <p className="client-card-items-flex__p1">Wahid Ari</p>
@@ -276,14 +263,14 @@ function Main() {
               </div>
             </div>
             <div className="client-card-items">
-              <img src="../src/assets/images/star-img.png" alt="star-icon" />
+              <img src={star} alt="star-icon" />
               <p className="client-card-items__p">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
               <div className="client-card-items-flex">
                 <div>
-                  <img src="../src/assets/images/vahid-3.png" alt="img-man" />
+                  <img src={manImg3} alt="img-man" />
                 </div>
                 <div>
                   <p className="client-card-items-flex__p1">Wahid Ari</p>

@@ -1,4 +1,5 @@
 import "./Footer.scss";
+const imgFooter = "../src/assets/images/footer-right-img.png";
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
             <button className="footer-grid-left__btn">Get This</button>
           </div>
           <div className="footer-grid-right">
-            <img src="../src/assets/images/footer-right-img.png" alt="img" />
+            <img src={imgFooter} alt="img" />
           </div>
         </div>
       </div>

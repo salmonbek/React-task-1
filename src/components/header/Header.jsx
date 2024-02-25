@@ -1,5 +1,6 @@
 import "./Header.scss";
-
+const logo = "../src/assets/images/logo.png";
+const dark = "../src/assets/images/dark.svg";
 function Header() {
   return (
     <div className="header">
@@ -7,7 +8,7 @@ function Header() {
         <div className="nav">
           <div>
             <a className="logo-flex" href="">
-              <img src="../src/assets/images/logo.png" alt="" />
+              <img src={logo} alt="" />
               <p className="logo-flex-item">Product</p>
             </a>
           </div>
@@ -35,7 +36,7 @@ function Header() {
             <button className="nav-btn-1">Sign In</button>
             <button className="nav-btn-2">Sign Up</button>
             <button className="mode-btn">
-              <img src="../src/assets/images/dark.svg" alt="dark-icon" />
+              <img src={dark} alt="dark-icon" />
             </button>
           </ul>
         </div>
